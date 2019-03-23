@@ -1,0 +1,188 @@
+.header {
+	width: 100%;
+	/*height: 1195px;*/
+	padding-top: 92px;
+	background-color: red;
+	background-color: #fffef9;
+	padding-bottom: 410px;
+	
+	background-image:
+		url(../img/illustrations/illustration-header.png),
+		linear-gradient(to top, #ffffff 0%, #fff9df 100%);
+		
+	background-repeat: no-repeat;
+	background-position: center bottom, top left ;
+	background-size: 100% auto;
+}
+
+.logo-wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	margin-bottom: 23px;
+}
+
+.promises-counter__icon {
+	margin-bottom: 8px;
+}
+
+.promises-counter__number {
+	color: #0D3E60;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 1;
+	margin-bottom: 4px;
+}
+
+.promises-counter__desc {
+	color: #0d3e60;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 1;
+}
+
+.header-content {
+	text-align: center;
+	max-width: 650px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.header__icon-mail {
+	margin-bottom: 30px;
+}
+
+.header__invite {
+	color: #eb5238;
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 1;
+	margin-bottom: 21px;
+}
+
+.header__title {
+	color: #0d3e60;
+	font-size: 38px;
+	font-weight: 700;
+	line-height: 1;
+	margin-bottom: 36px;
+}
+
+.header-names {
+	display: block;
+	margin-bottom: 60px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	-webkit-justify-content: center;
+	        justify-content: center;
+}
+
+.header-names-left {
+	text-align: right;
+}
+
+.header-names-right {
+	text-align: left;
+}
+
+.header-names__name {
+	color: #eb5238;
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 40px;
+}
+
+.header-names__email {
+	color: #0d3e60;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 36px;
+}
+
+.header-names-button {
+	width: 91px;
+	height: 91px;
+	background-color: #ed543a;
+    border-radius: 60px;
+    background-image: url("../img/icons/icon-heart.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+	margin-left: 37px;
+	margin-right: 37px;
+}
+
+.header-names-button::after {
+	content: "+";
+	display: block;
+	width: 37px;
+	height: 37px;
+	background-color: #ffcc36;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translate(-50%, 100%);
+	color: #ffffff;
+	font-size: 30px;
+	font-weight: 300;
+	line-height: 37px;
+	text-align: center;
+} 
+
+.scroll__desc {
+	color: #0d3e60;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 24px;
+	margin-bottom: 16px;
+	text-align: center;
+}
+
+.scroll-bg {
+	max-width: 750px;
+	height: 122px;
+	background-color: #fff9df;
+	position: relative;
+	text-align: center;
+	padding: 0 50px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.scroll-bg::before {
+	content: "";
+	width: 57px;
+	height: 174px;
+	display: block;
+	position: absolute;
+	left: -23px;
+	top: -28px;
+	background-image: url("../img/header/left_scroll.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.scroll-bg::after {
+	content: "";
+	width: 57px;
+	height: 174px;
+	display: block;
+	position: absolute;
+	right: -23px;
+	top: -28px;
+	background-image: url("../img/header/right_scroll.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.scroll__title {
+	color: #8d8b80;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 24px;
+}
