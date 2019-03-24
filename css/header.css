@@ -5,7 +5,7 @@
 	background-color: red;
 	background-color: #fffef9;
 	padding-bottom: 410px;
-	
+	position: relative;
 	background-image:
 		url(../img/illustrations/illustration-header.png),
 		linear-gradient(to top, #ffffff 0%, #fff9df 100%);
@@ -186,3 +186,29 @@
 	font-weight: 500;
 	line-height: 24px;
 }
+
+.link-circle {
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%);
+	display: block;
+	width: 81px;
+	height: 81px;
+	border-radius: 50px;
+	background-color: rgba(235, 82, 56, .2);
+	position: absolute;	
+}
+
+.ls-inner {
+	width: 55px;
+	height: 55px;
+	top: 13px;
+	left: 13px;
+	background-color: #eb5238;
+	border-radius: 50px;
+	position: absolute;
+	background-image: url("../img/icons/arrow-down.svg");
+	background-repeat: no-repeat;
+	background-position: center;	
+}
+
