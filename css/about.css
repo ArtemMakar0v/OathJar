@@ -1,0 +1,81 @@
+.about-wrapper {
+	position: relative;
+	overflow: hidden;
+	padding-top: 65px;
+}
+
+.about-wrapper::after {
+	position: absolute;
+	right: -180px;
+	top: 100px;
+	content: "";
+	width: 612px;
+	height: 518px;
+	display: block;
+	background-image: url("../img/illustrations/shape-3.svg");
+	background-repeat: no-repeat;
+	background-position: right top;
+	z-index: -1;
+}
+
+
+
+.about-cards {
+	width: 488px;
+	display: flex;
+    justify-content: space-between;
+}
+
+.cards-1-column {
+	
+}
+
+.cards-2-column {
+	padding-top: 150px;
+}
+
+.about-content {
+	width: 555px;
+	height: 200px;
+	color: #0d3e60;
+	font-size: 22px;
+	font-weight: 300;
+	line-height: 36px;
+}
+
+.about-content p {
+	margin-bottom: 36px;
+} 
+
+.about-toggle-wrapper {
+	display: flex;
+	margin-bottom: 90px;
+}
+
+a.about__toggle, .about__toggle  {
+	width: 165px;
+	height: 46px;
+	border-radius: 20px;
+	background-color: #fff9df;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #2e435e;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 46px;
+	margin-right: 20px;
+	cursor: pointer;
+    transition: 0.2s ease-in;
+    text-decoration: none;
+    text-align: center;
+}
+
+.about__toggle:hover {
+	background-color: #ff8e39;
+	color: #fff;
+}
+
+.title-special {
+	color: #eb5238;
+	margin-bottom: 65px;
+}

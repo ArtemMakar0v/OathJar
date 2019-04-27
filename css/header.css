@@ -1,17 +1,18 @@
 .header {
 	width: 100%;
+	position: relative;
 	/*height: 1195px;*/
 	padding-top: 92px;
 	background-color: red;
 	background-color: #fffef9;
 	padding-bottom: 410px;
-	position: relative;
+
 	background-image:
 		url(../img/illustrations/illustration-header.png),
 		linear-gradient(to top, #ffffff 0%, #fff9df 100%);
-		
+
 	background-repeat: no-repeat;
-	background-position: center bottom, top left ;
+	background-position: center bottom, top left;
 	background-size: 100% auto;
 }
 
@@ -75,7 +76,7 @@
 	margin-right: auto;
 	display: flex;
 	-webkit-justify-content: center;
-	        justify-content: center;
+	justify-content: center;
 }
 
 .header-names-left {
@@ -104,8 +105,8 @@
 	width: 91px;
 	height: 91px;
 	background-color: #ed543a;
-    border-radius: 60px;
-    background-image: url("../img/icons/icon-heart.svg");
+	border-radius: 60px;
+	background-image: url("../img/icons/icon-heart.svg");
 	background-repeat: no-repeat;
 	background-position: center;
 	position: relative;
@@ -119,17 +120,17 @@
 	width: 37px;
 	height: 37px;
 	background-color: #ffcc36;
-    border-radius: 20px;
-    position: absolute;
-    bottom: 15px;
-    left: 50%;
-    transform: translate(-50%, 100%);
+	border-radius: 20px;
+	position: absolute;
+	bottom: 15px;
+	left: 50%;
+	transform: translate(-50%, 100%);
 	color: #ffffff;
 	font-size: 30px;
 	font-weight: 300;
 	line-height: 37px;
 	text-align: center;
-} 
+}
 
 .scroll__desc {
 	color: #0d3e60;
@@ -148,15 +149,15 @@
 	text-align: center;
 	padding: 0 50px;
 	display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
+	align-items: center;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .scroll-bg::before {
 	content: "";
-	width: 57px;
+	width: 73px;
 	height: 174px;
 	display: block;
 	position: absolute;
@@ -169,7 +170,7 @@
 
 .scroll-bg::after {
 	content: "";
-	width: 57px;
+	width: 73px;
 	height: 174px;
 	display: block;
 	position: absolute;
@@ -190,25 +191,25 @@
 .link-circle {
 	bottom: 0;
 	left: 50%;
-	transform: translate(-50%);
+	transform: translateX(-50%);
 	display: block;
 	width: 81px;
 	height: 81px;
 	border-radius: 50px;
 	background-color: rgba(235, 82, 56, .2);
-	position: absolute;	
+	position: absolute;
 }
 
-.ls-inner {
+.link-circle-inner {
+	position: absolute;
+	left: 13px;
+	top: 13px;
 	width: 55px;
 	height: 55px;
-	top: 13px;
-	left: 13px;
 	background-color: #eb5238;
 	border-radius: 50px;
-	position: absolute;
+	z-index: 2;
 	background-image: url("../img/icons/arrow-down.svg");
 	background-repeat: no-repeat;
-	background-position: center;	
+	background-position: center;
 }
-

@@ -10,10 +10,20 @@ body {
 	font-family: 'Poppins', sans-serif;
 }
 
+p {
+	margin-top: 0;
+	margin-bottom: 15px;
+}
+
 .container {
 	width: 1140px;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.justify-between {
+	display: flex;
+	justify-content: space-between;
 }
 
 .title-2 {
@@ -21,6 +31,7 @@ body {
 	font-size: 30px;
 	font-weight: 700;
 	line-height: 24px;
+	margin-top: 0;
 	margin-bottom: 35px;
 }
 
@@ -55,8 +66,7 @@ body {
 	background-position: center;
 }
 
-.form {
-}
+.form {}
 
 .input {
 	width: 293px;
@@ -75,19 +85,26 @@ body {
 	margin-right: 25px;
 }
 
-::-webkit-input-placeholder { /* Chrome */
-  color: #2e435e;
+::-webkit-input-placeholder {
+	/* Chrome */
+	color: #2e435e;
 }
-:-ms-input-placeholder { /* IE 10+ */
-  color: #2e435e;
+
+:-ms-input-placeholder {
+	/* IE 10+ */
+	color: #2e435e;
 }
-::-moz-placeholder { /* Firefox 19+ */
-  color: #2e435e;
-  opacity: 1;
+
+::-moz-placeholder {
+	/* Firefox 19+ */
+	color: #2e435e;
+	opacity: 1;
 }
-:-moz-placeholder { /* Firefox 4 - 18 */
-  color: #2e435e;
-  opacity: 1;
+
+:-moz-placeholder {
+	/* Firefox 4 - 18 */
+	color: #2e435e;
+	opacity: 1;
 }
 
 .input:focus {
@@ -99,7 +116,7 @@ body {
 }
 
 .checkbox-fake {
-    border-radius: 20px;
+	border-radius: 20px;
 	display: inline-block;
 	vertical-align: middle;
 	margin-right: 10px;
@@ -113,7 +130,7 @@ body {
 
 .checkbox-fake::after {
 	content: "";
-    border-radius: 8px;
+	border-radius: 8px;
 	display: block;
 	width: 0px;
 	height: 0px;
@@ -123,13 +140,13 @@ body {
 	position: absolute;
 	transform: translate(-50%, -50%);
 	-webkit-transition: 0.2s ease-in;
-	   -moz-transition: 0.2s ease-in;
-	    -ms-transition: 0.2s ease-in;
-	     -o-transition: 0.2s ease-in;
-	        transition: 0.2s ease-in;
+	-moz-transition: 0.2s ease-in;
+	-ms-transition: 0.2s ease-in;
+	-o-transition: 0.2s ease-in;
+	transition: 0.2s ease-in;
 }
 
-.checkbox:checked + .checkbox-fake::after {
+.checkbox:checked+.checkbox-fake::after {
 	width: 11px;
 	height: 11px;
 }
@@ -139,7 +156,7 @@ body {
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 30px;
-	display: inline-block; 
+	display: inline-block;
 	vertical-align: middle;
 }
 
@@ -147,7 +164,7 @@ body {
 	color: #0d3e60;
 	font-weight: 700;
 	text-decoration: underline;
-} 
+}
 
 .submit {
 	color: #ffffff;
@@ -157,7 +174,7 @@ body {
 	border: none;
 	cursor: pointer;
 	margin-right: 27px;
-	
+
 	width: 216px;
 	height: 52px;
 	border-radius: 20px;
@@ -181,14 +198,14 @@ body {
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 24px;
-	color: #0d3e60;	
+	color: #0d3e60;
 }
 
 .form-notice a {
 	font-weight: 700;
 	text-decoration: underline;
 	color: #eb5238;
-} 
+}
 
 .form-group {
 	display: flex;

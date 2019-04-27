@@ -1,4 +1,4 @@
-.further-info-wrapper {
+.further-information-wrapper {
 	background-image: url("../img/illustrations/illustration.png");
 	background-repeat: no-repeat;
 	background-position: left 100px;
@@ -6,7 +6,7 @@
 	padding-bottom: 65px;
 }
 
-.fi-content {
+.further-information-content {
 	width: 555px;
 	margin-left: auto;
 	color: rgba(13, 62, 96, .86);
@@ -16,6 +16,6 @@
 	margin-bottom: 40px;
 }
 
-.fi-content p {
+.further-information-content p {
 	margin-bottom: 25px;
 } 
