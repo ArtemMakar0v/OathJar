@@ -26,6 +26,11 @@ p {
 	justify-content: space-between;
 }
 
+.align-center{
+	display: flex;
+	align-items: center;
+}
+
 .title-2 {
 	color: #0d3e60;
 	font-size: 30px;
