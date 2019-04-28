@@ -77,14 +77,21 @@
 	display: flex;
 	-webkit-justify-content: center;
 	justify-content: center;
+	position: relative;
 }
 
 .header-names-left {
 	text-align: right;
+	width: 50%;
+	padding-right: 80px;
+	padding-top: 10px;
 }
 
 .header-names-right {
 	text-align: left;
+	width: 50%;
+	padding-left: 80px;
+	padding-top: 10px;
 }
 
 .header-names__name {
@@ -109,9 +116,10 @@
 	background-image: url("../img/icons/icon-heart.svg");
 	background-repeat: no-repeat;
 	background-position: center;
-	position: relative;
-	margin-left: 37px;
-	margin-right: 37px;
+	position: absolute;
+	left: 50%;
+	top: 0;
+	transform: translate(-50%, 0%);
 }
 
 .header-names-button::after {
