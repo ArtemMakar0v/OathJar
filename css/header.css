@@ -50,23 +50,23 @@
 
 .logo-wrapper {
 	display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	margin-bottom: 50px;
 	position: relative;
-    padding-top: 60px;
+	padding-top: 60px;
 }
 
 @media (min-width: 1140px) {
 	.logo-wrapper {
 		display: flex;
-    	flex-direction: row;
+		flex-direction: row;
 		justify-content: space-between;
 		align-items: flex-end;
 		margin-bottom: 23px;
 		position: relative;
-   		padding-top: 0px;
+		padding-top: 0px;
 		margin-bottom: 23px;
 	}
 }
@@ -83,11 +83,11 @@
 	padding-left: 37px;
 	padding-right: 37px;
 	padding-top: 13px;
-    border-radius: 24px;
-    position: absolute;
-    top: -75px;
-    left: -45px;
-    width: 276px;
+	border-radius: 24px;
+	position: absolute;
+	top: -75px;
+	left: -45px;
+	width: 276px;
 }
 
 .tagline:after {
@@ -99,14 +99,14 @@
 	/*width: 15px;*/
 	/*height: 9px;*/
 	/*background-color: red;*/
-	border: 8px solid transparent;	
+	border: 8px solid transparent;
 	border-top: 10px solid #FFF;
-    transform: translateY(100%);
+	transform: translateY(100%);
 }
 
 .tagline strong {
 	font-weight: 700;
-} 
+}
 
 .logo {
 	margin-bottom: 25px;
@@ -188,12 +188,12 @@
 	-webkit-justify-content: center;
 	justify-content: center;
 	position: relative;
-    flex-direction: column;
+	flex-direction: column;
 }
 
 @media (min-width: 1140px) {
 	.header-names {
-   		flex-direction: row;
+		flex-direction: row;
 	}
 }
 
@@ -248,7 +248,7 @@
 	background-image: url("../img/icons/icon-heart.svg");
 	background-repeat: no-repeat;
 	background-position: center;
-   	background-size: 30px auto;
+	background-size: 30px auto;
 	position: relative;
 	position: absolute;
 	left: 50%;
@@ -262,8 +262,8 @@
 		height: 91px;
 		top: 0;
 		transform: translate(-50%, 0%);
-   		display: block;
-   		background-size: 54px auto;
+		display: block;
+		background-size: 54px auto;
 	}
 }
 
@@ -286,7 +286,7 @@
 }
 
 @media (min-width: 1140px) {
-	.header-names-button::after  {
+	.header-names-button::after {
 		width: 37px;
 		height: 37px;
 		font-size: 30px;
@@ -378,13 +378,13 @@
 }
 
 @media (min-width: 700px) {
-	.link-circle  {
+	.link-circle {
 		transform: translate(-50%, 20%);
 	}
 }
 
 @media (min-width: 1140px) {
-	.link-circle  {
+	.link-circle {
 		transform: translate(-50%, 0);
 	}
 }
@@ -403,6 +403,7 @@
 	background-position: center;
 }
 
-.cloud-1, .cloud-2 {
+.cloud-1,
+.cloud-2 {
 	display: none;
 }

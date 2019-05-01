@@ -18,12 +18,41 @@
 	z-index: -1;
 }
 
+.about-container {
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media (min-width: 1140px) {
+	.about-container  {
+       	flex-direction: row;
+		justify-content: space-between;
+	}
+}
 
 
 .about-cards {
 	width: 488px;
 	display: flex;
-    justify-content: space-between;
+	justify-content: space-between;
+    order: 2;
+    flex-direction: column;
+    padding-left: 40px;
+}
+
+
+@media (min-width: 600px) {
+	.about-cards  {
+        flex-direction: row;
+	}
+}
+
+@media (min-width: 1140px) {
+	.about-cards  {
+   		order: 1;
+        padding-left: 0;
+	}
 }
 
 .cards-1-column {
@@ -31,28 +60,75 @@
 }
 
 .cards-2-column {
-	padding-top: 150px;
+	padding-top: 0px;
+}
+
+@media (min-width: 600px) {
+	.cards-2-column   {
+		padding-left: 60px;
+		padding-top: 150px;
+	}
+}
+
+@media (min-width: 890px) and (max-width: 1140px) {
+	.cards-1-column   {
+		display: flex;
+	}
+
+	.cards-1-column .card {
+		margin-right: 60px;
+	}
+	.cards-2-column {
+		padding-top: 0;
+		padding-left: 0px;
+	}
+}
+
+@media (min-width: 1140px) {
+	.cards-2-column   {
+		padding-left: 0px;
+		padding-top: 150px;
+	}
 }
 
 .about-content {
-	width: 555px;
-	height: 200px;
 	color: #0d3e60;
-	font-size: 22px;
+	font-size: 18px;
 	font-weight: 300;
-	line-height: 36px;
+	line-height: 1.6;
+    order: 1;
+    margin-bottom: 50px;
+}
+
+@media (min-width: 1140px) {
+	.about-content  {
+		font-size: 22px;
+   		order: 2;
+		width: 555px;
+		margin-bottom: 0;
+	}
 }
 
 .about-content p {
 	margin-bottom: 36px;
-} 
+}
 
 .about-toggle-wrapper {
 	display: flex;
-	margin-bottom: 90px;
+    flex-direction: column;
+	margin-bottom: 20px;
 }
 
-a.about__toggle, .about__toggle  {
+
+@media (min-width: 1140px) {
+	.about-toggle-wrapper   {
+        flex-direction: row;
+		margin-bottom: 90px;
+	}
+}
+
+a.about__toggle,
+.about__toggle {
 	width: 165px;
 	height: 46px;
 	border-radius: 20px;
@@ -65,9 +141,17 @@ a.about__toggle, .about__toggle  {
 	line-height: 46px;
 	margin-right: 20px;
 	cursor: pointer;
-    transition: 0.2s ease-in;
-    text-decoration: none;
-    text-align: center;
+	transition: 0.2s ease-in;
+	text-decoration: none;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+@media (min-width: 1140px) {
+	a.about__toggle,
+	.about__toggle   {
+        margin-bottom: 0;
+	}
 }
 
 .about__toggle:hover {
@@ -77,5 +161,11 @@ a.about__toggle, .about__toggle  {
 
 .title-special {
 	color: #eb5238;
-	margin-bottom: 65px;
+	margin-bottom: 30px;
+}
+
+@media (min-width: 1140px) {
+	.title-special   {
+		margin-bottom: 65px;
+	}
 }
