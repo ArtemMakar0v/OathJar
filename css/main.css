@@ -9,6 +9,7 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: 'Poppins', sans-serif;
+	position: relative;
 }
 
 p {
@@ -110,7 +111,7 @@ p {
 }
 
 @media (min-width: 700px) {
-	.input  {
+	.input {
 		margin-bottom: 0;
 		width: 293px;
 	}
@@ -222,7 +223,7 @@ p {
 }
 
 @media (min-width: 700px) {
-	.submit  {
+	.submit {
 		margin-bottom: 0;
 	}
 }
@@ -252,8 +253,50 @@ p {
 }
 
 @media (min-width: 700px) {
-	.form-group  {
+	.form-group {
 		flex-direction: row;
 		align-items: center;
 	}
 }
+
+.scrollToTop-wrapper {
+	display: none;
+	width: 81px;
+	height: 81px;
+	border-radius: 50px;
+	background-color: rgba(235, 82, 56, .2);
+	cursor: pointer;
+	
+	position: fixed;
+	right: 15px;
+	bottom: 15px;
+	
+	-webkit-transform: rotate(180deg);
+	   -moz-transform: rotate(180deg);
+	    -ms-transform: rotate(180deg);
+	     -o-transform: rotate(180deg);
+	        transform: rotate(180deg);
+}
+
+
+@media (min-width: 1140px) {
+	.scrollToTop-wrapper {
+		right: 100px;
+		bottom: 100px;
+	}
+}
+
+.scrollToTop-icon {
+	position: absolute;
+	left: 13px;
+	top: 13px;
+	width: 55px;
+	height: 55px;
+	background-color: #eb5238;
+	border-radius: 50px;
+	z-index: 2;
+	background-image: url("../img/icons/arrow-down.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+

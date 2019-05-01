@@ -27,6 +27,7 @@
 }
 
 .cloud-1 {
+	display: none;
 	position: absolute;
 	top: 300px;
 	left: -15px;
@@ -37,7 +38,14 @@
 	height: 77px;
 }
 
+@media (min-width: 1140px) {
+	.cloud-1 {
+		display: block;
+	}
+}
+
 .cloud-2 {
+	display: none;
 	position: absolute;
 	top: 263px;
 	right: -21px;
@@ -46,6 +54,13 @@
 	background-position: center;
 	width: 86px;
 	height: 49px;
+}
+
+
+@media (min-width: 1140px) {
+	.cloud-2 {
+		display: block;
+	}
 }
 
 .logo-wrapper {
@@ -401,9 +416,4 @@
 	background-image: url("../img/icons/arrow-down.svg");
 	background-repeat: no-repeat;
 	background-position: center;
-}
-
-.cloud-1,
-.cloud-2 {
-	display: none;
 }
