@@ -17,8 +17,18 @@ p {
 
 .container {
 	width: 1140px;
+	padding-left: 15px;
+	padding-right: 15px;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+@media (min-width: 1140px) {
+	.container{
+		padding-left: 0;
+		padding-right: 0;
+		width: 1140px;
+	}
 }
 
 .justify-between {
@@ -218,3 +228,5 @@ p {
 	align-items: center;
 	margin-bottom: 25px;
 }
+
+
