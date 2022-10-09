@@ -3,7 +3,8 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>OathJar Invitation</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/header.css">
 	<link rel="stylesheet" href="css/further-information.css">
@@ -11,6 +12,20 @@
 	<link rel="stylesheet" href="css/card.css">
 	<link rel="stylesheet" href="css/footer.css">
 	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700" rel="stylesheet">
+
+	<style>
+		/*		.header, 
+		.further-information-wrapper, 
+		.about-wrapper {
+			display: none;
+		}*/
+
+
+		/*.header,  .further-information-wrapper, .about-wrapper, .footer {*/
+/*		.header,  .further-information-wrapper,  .footer {
+			display: none;
+		}*/
+	</style>
 </head>
 
 <body>
@@ -18,9 +33,16 @@
 	<header class="header">
 		<div class="container">
 
+			<div class="cloud-1"></div>
+			<div class="cloud-2"></div>
+
 			<!-- Logo-wrapper -->
 			<div class="logo-wrapper">
+
 				<div class="logo">
+					<div class="tagline">
+						Where promises <strong>are kept</strong>
+					</div>
 					<img src="img/logo.png" alt="Logo">
 				</div>
 				<div class="promises-counter">
@@ -57,32 +79,32 @@
 					<div class="scroll__title">Hi Janice! Check out this great website</div>
 				</div>
 			</div>
-
-			<div class="link-circle">
-				<div class="link-circle-inner">
-				</div>
-			</div>
-
 		</div>
+
+		<div class="link-circle">
+			<div class="link-circle-inner">
+			</div>
+		</div>
+
 	</header>
 
 	<div class="further-information-wrapper">
 		<div class="container">
+
+			<div class="further-information-image-mobile">
+				<img src="img/illustrations/illustration.png" alt="">
+			</div>
+
 			<div class="further-information-content">
-
 				<h2 class="title-2">Further Information</h2>
-
 				<p>We, at OathJar, think it’s really important that couples have some ground rules in place as they prgress through their relationships. That’s why we’re dedicated to offer you a secure environment where you can establish those promises</p>
-
 				<ul class="checklist">
 					<li>Professional and secure environment</li>
 					<li>100% Private couple profiles and promises</li>
 					<li>Unlimited space</li>
 					<li>Notification Reminders</li>
 				</ul>
-
 				<p>We just need your name as a signature</p>
-
 				<form class="form" action="">
 					<div class="form-group">
 						<input class="input" type="text" placeholder="Your name">
@@ -103,9 +125,9 @@
 	</div>
 
 	<div class="about-wrapper">
-		<div class="container justify-between">
+		<div class="container about-container">
 			<div class="about-cards">
-				
+
 				<!-- cards-1-column -->
 				<div class="cards-1-column">
 					<div class="card">
@@ -219,35 +241,54 @@
 
 				</div>
 				<!-- cards-2-column -->
-				
+
 			</div>
 			<div class="about-content">
 				<div class="about-toggle-wrapper">
-					<a href="#" class="about__toggle">Why Use OathJar</a>
-					<a href="#" class="about__toggle">How it Works</a>
-					<a href="#" class="about__toggle">OathJar is Private</a>
+					<a href="#whyuse" class="about__toggle">Why Use OathJar</a>
+					<a href="#howitworks" class="about__toggle">How it Works</a>
+					<a href="#private" class="about__toggle">OathJar is Private</a>
 				</div>
-				<h2 class="title-2 title-special">What is OathJar?</h2>
-				<p>OathJar is a brand new company aimed at providing people in an active relationship with a place of their own to set the rules and guidelines of their relationships</p>
+
+				<div class="about-content-box-wrapper">
+
+					<div class="about-content__box" id="whyuse">
+						<h2 class="title-2 title-special">Why Use OathJar</h2>
+						<p>OathJar is a brand new company aimed at providing people in an active relationship with a place of their own to set the rules and guidelines of their relationships</p>
+					</div>
+
+					<div class="about-content__box" id="howitworks">
+						<h2 class="title-2 title-special">How it Works</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium eaque aliquam veritatis vero ducimus neque voluptatem itaque, similique sunt quis? Quisquam aliquam cum laborum dolore optio sapiente amet veritatis, laudantium iste necessitatibus.</p>
+					</div>
+
+					<div class="about-content__box" id="private">
+						<h2 class="title-2 title-special">OathJar is Private</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum praesentium nisi, assumenda optio debitis incidunt.</p> 
+						<p>Laboriosam sequi asperiores reprehenderit dolorem est similique placeat quas eos eius dolore unde earum ex vero quidem. Molestiae cumque nam voluptates mollitia, optio officia! Blanditiis, nostrum, quas.</p>
+					</div>
+
+				</div>
+
+
 			</div>
 		</div>
 	</div>
-	
+
 	<div class="footer">
-		<div class="container justify-between align-center">
+		<div class="container footer-container  justify-between align-center">
 			<div class="footer-copyright">
 				<div class="footer-copyright__logo">
-					<img src="img/logo.png" alt="logo">
+					<img src="img/logo.png" alt="Logo">
 				</div>
 				<div class="footer-copyright__text">
 					© OathJar, 2018
 				</div>
-				
 			</div>
 			<div class="footer-navigation">
 				<ul class="footer-navigation-list">
 					<li><a href="#">FAQ</a></li>
-					<li><a href="#">Privacy Police</a></li>
+					<li><a href="#">Privacy Policy</a></li>
 					<li><a href="#">Terms of Service</a></li>
 					<li><a href="#">Contact Us</a></li>
 				</ul>
@@ -255,8 +296,13 @@
 		</div>
 	</div>
 
+	<div id="scrollToTop" class="scrollToTop-wrapper">
+		<div class="scrollToTop-icon"></div>
+	</div>
 
+	<script src="libs/jquery/jquery-3.3.1.min.js"></script>
+	<script src="script/main.js"></script>
 
+	
 </body>
-
 </html>

@@ -1,56 +1,116 @@
-.footer{
-	padding-top: 55px;
-	padding-bottom: 120px;
-
+.footer {
+	padding-top: 25px;
+	padding-bottom: 60px;
 }
 
-.footer-copyright{
-	width: 460px;
+@media (min-width: 890px) {
+	.footer {
+		padding-top: 55px;
+		padding-bottom: 120px;
+	}
+}
+
+.footer-container {
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+@media (min-width: 890px) {
+	.footer-container   {
+        flex-direction: row;
+	    justify-content: space-between;
+    	align-items: center;
+	}
+}
+
+.footer-copyright {
 	text-align: left;
 	color: #2e435e;
 	font-size: 16px;
 	font-weight: 300;
 	line-height: 30px;
 	display: flex;
+    flex-direction: column;
 	justify-content: flex-start;
-	align-items: center;
+	align-items: flex-start;
+	margin-bottom: 30px;
 }
 
-.footer-copyright__logo{
+@media (min-width: 890px) {
+	.footer-copyright   {
+		align-items: center;
+        flex-direction: row;
+		width: 460px;
+		margin-bottom: 0;
+	}
+}
+
+.footer-copyright__logo {
 	margin-right: 17px;
+	margin-bottom: 15px;
 }
 
-.footer-navigation{
-	width: 650px;
-	text-align: right;
+@media (min-width: 890px) {
+	.footer-copyright__logo {
+		margin-bottom: 0px;
+	}
 }
 
-.footer-navigation-list{
+.footer-navigation {
+	text-align: left;
+}
+
+@media (min-width: 890px) {
+	.footer-navigation  {
+		text-align: right;
+		width: 650px;
+	}
+}
+
+.footer-navigation-list {
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
 	display: flex;
+    flex-direction: column;
 	justify-content: flex-end;
 }
 
-.footer-navigation-list li{
-	margin-right: 33px;
+@media (min-width: 890px) {
+	.footer-navigation-list {
+    	flex-direction: row;
+	}
+}
+
+.footer-navigation-list li {
+	margin-right: 0;
 	color: #2e435e;
 	font-size: 16px;
 	font-weight: 700;
-	line-height: 31px;
+	line-height: 30px;
+	margin-bottom: 10px;
 }
 
-.footer-navigation-list li:last-child{
+@media (min-width: 890px) {
+	.footer-navigation-list li {
+		margin-right: 33px;
+		margin-bottom: 0px;
+	}
+}
+
+.footer-navigation-list li:last-child {
 	margin-right: 0;
+
 }
 
-.footer-navigation-list a{
+.footer-navigation-list a {
 	color: #2e435e;
 	text-decoration: none;
 	transition: all 0.2s ease-in;
 }
 
-.footer-navigation-list a:hover{
-	color: #ed543a;
+.footer-navigation-list a:hover {
+	color: #eb5238;
 }
